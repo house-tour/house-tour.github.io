@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="HouseTour: A Virtual Real Estate A(I)gent">
+  <meta name="keywords" content="I-Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HouseTour: A Virtual Real Estate A(I)gent</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FWSVCGZTG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-1FWSVCGZTG');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/real-estate.svg">
+
+    <script src="./static/js/jquery-3.2.1.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/jquery.event.move.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">HouseTour: A Virtual Real Estate A(I)gent</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Ata Çelen</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dániel Béla Baráth</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ir0.github.io/">Iro Armeni</a><sup>2*</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">ETH Zürich</span><sup>1</sup>,
+            <span class="author-block">Stanford University</span><sup>2</sup>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">*Equal supervision</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a title="To be Published..." 
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a title="To be Published..." 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a title="To be Published..."
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a title="To be Published..."
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel-liv" class="carousel results-carousel">
+          <div class="item">
+            <img src="./static/images/carousel/render_10_0.png" >
+          </div>
+          <div class="item">
+            <img src="./static/images/carousel/render_10_1.png" >
+          </div>
+          <div class="item">
+            <img src="./static/images/carousel/render_11_0.png" >
+          </div>
+          <div class="item">
+            <img src="./static/images/carousel/render_11_1.png" >
+          </div>
+          <div class="item">
+            <img src="./static/images/carousel/render_13_0.png" >
+          </div>
+          <div class="item">
+            <img src="./static/images/carousel/render_13_1.png" >
+          </div>
+          <div class="item">
+            <img src="./static/images/carousel/render_15_0.png" >
+          </div>
+          <div class="item">
+            <img src="./static/images/carousel/render_15_1.png" >
+          </div>
+        </div>
+        <h2 class="subtitle has-text-centered">
+            <em>"Design me a living room!"</em>
+        </h2>
+      </div>
+    </div>
+</section>
+
+<script>
+    $(window).on('load', function() {
+      bulmaCarousel.attach('#results-carousel-liv', {
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        loop: true,
+        autoplay: true,
+      });
+    });
+</script> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="evaluation" width="100%" src="./static/images/teaser.png">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+              We introduce <span class="methodname">HouseTour</span>, a method for spatially-aware 3D camera trajectory 
+              and natural language summary generation from a collection of images depicting an existing 3D space. 
+              Unlike existing vision-language models (VLMs), which struggle with geometric reasoning, our approach 
+              generates smooth video trajectories via a diffusion process constrained by known camera poses and 
+              integrates this information into the VLM for 3D-grounded descriptions. We synthesize the final video 
+              using 3D Gaussian splatting to render novel views along the trajectory. To support this task, we 
+              present the <span class="methodname">HouseTour</span> dataset, which includes over 1,200 house-tour videos with camera poses, 
+              3D reconstructions, and real estate descriptions. Experiments demonstrate that incorporating 3D camera trajectories 
+              into the text generation process improves performance over methods handling each task independently. 
+              We evaluate both individual and end-to-end performance, introducing a new joint metric. Our work enables automated, 
+              professional-quality video creation for real estate and touristic applications without requiring 
+              specialized expertise or equipment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section pt-0">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+          <div class="container is-max-desktop">
+            <div class="hero-body">
+              <img id="teaser" width="100%" src="./static/images/overview.png" alt="Image demonstrating the I-Design pipeline.">
+            </div>
+            <div class="content has-text-justified">
+                <p>
+                    The <span class="methodname">I-Design</span> system comprises two primary components: Scene Graph Generation and 3D Scene Construction.
+                    The Scene Graph Generation component converts the user's textual input into a scene graph representation. This process involves a collaboration among large language model agents engaging in a dialogue with each other.
+                    The final 3D scene is then constructed from the scene graph representation. This is accomplished by executing a Backtracking Algorithm on the generated scene graph.
+                    Subsequently, 3D assets are retrieved using multi-modal embeddings from an existing object database and integrated into the 3D scene.
+                </p>
+                <p>
+                    The multi-agents are responsible of analyzing the user's input and generating a scene graph representation, which showcases the objects within the scene and the positional relationships between them. The task of generating
+                    the scene graph is achieved through the communication of the agents with one another, where each agent is responsible of a specific part of the generation pipeline. These tasks include identifying the objects to be included in the scene,
+                    determining the positional relationships between the objects and outputting the scene graph in a predefined JSON schema.
+                </p>
+                <p>
+                    The role of the Backtracking Algorithm is to convert the relative object representations in the scene graph into absolute 3D coordinates. This is achieved by iteratively placing the objects in the scene in a collision-free manner and ensuring that the objects are not placed out-of-bounds.
+                    The relative positions of objects define a bounding box of plausible positions for each object. The Backtracking Algorithm iterates through the objects in the scene graph and places them in the scene by selecting a position within the bounding box of the object. If the object cannot be placed in the scene, the algorithm backtracks and tries a different position.
+                    The algorithm continues this process until all objects are placed in the scene or until it is determined that the scene is infeasible. The final 3D scene is then constructed by retrieving 3D assets from the Objaverse database. This is achieved by querying the database with the object names, material and architectural style information from the scene graph.
+                    The retrieved assets are then placed into a Blender scene and rendered.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section> -->
+
+<!-- <section class="section pt-0">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Experiments</h2> 
+        </div>
+      </div>
+    </div>
+</section> -->
+
+<!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img id="gallery" width="100%" src="./static/images/gallery.jpg" alt="Gallery of 3D indoor scene renders.">
+      </div>
+    </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Comparison using the GPT-4V Evaluator</h2>
+        <div class="content has-text-justified">
+          <p>
+              We compare I-Design with an existing Text-To-3D method, LayoutGPT,
+              using the GPT-V evaluator. Previous work has shown the effectiveness of GPT-V in
+              evaluating the quality of 3D scenes generated from textual descriptions. We use the
+              same evaluator to compare the quality of the 3D scenes generated by I-Design and
+              LayoutGPT. The results show that I-Design outperforms LayoutGPT in all grading
+              metrics. As the LayoutGPT method does not accommodate user input, we use a generic
+              prompt for our method to ensure a fair comparison. These prompts are <em>"Design me a
+              living room!"</em> and <em>"Design me a bedroom!"</em>.
+          </p>
+          <p>
+              Furthermore, the Backtracking algorithm used in the placement of the objects ensures
+              that the objects are placed in the scene in a collision-free manner and disallows
+              objects from being placed out-of-bounds. This methodology leads to scenes that are
+              more physically plausible and visually appealing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img id="evaluation" width="100%" src="./static/images/table.png" alt="I-Design vs. LayoutGPT">
+      </div>
+    </div>
+</section> -->
+
+<!-- <section class="section pt-0" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Citation</h2>
+        <pre class="selectable"><code>@misc{çelen2024idesign,
+    title={HouseTour: A Virtual Real Estate A(I)gent}, 
+    author={Ata Çelen and Guo Han and Konrad Schindler and Luc Van Gool and Iro Armeni and Anton Obukhov and Xi Wang},
+    year={2024},
+    eprint={2404.02838},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI}
+}</code></pre>
+    </div>
+</section> -->
+
+<footer class="footer pt-4 pb-0">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        Website template based on
+                        <a href="https://github.com/nerfies/nerfies.github.io">
+                            Nerfies</a> and
+                        <a href="https://marigoldmonodepth.github.io/">
+                            Marigold</a>,
+                        and licensed under
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                            CC-BY-SA-4.0</a>.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</body>
+</html>
