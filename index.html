@@ -37,13 +37,13 @@
           <h1 class="title is-1 publication-title">HouseTour: A Virtual Real Estate A(I)gent</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a>Ata Çelen</a><sup>1,2</sup>,
+              <a href="https://inf.ethz.ch/people/people-atoz/person-detail.MjUxMjk3.TGlzdC8zMDQsLTIxNDE4MTU0NjA=.html">Ata Çelen</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
               <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a><sup>1,3</sup>
             </span>
             <span class="author-block">
-              <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dániel Béla Baráth</a><sup>1,4</sup>,
+              <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dániel Baráth</a><sup>1,4</sup>,
             </span>
             <span class="author-block">
               <a href="https://ir0.github.io/">Iro Armeni</a><sup>2</sup>,
@@ -90,16 +90,26 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
+                <a href="https://github.com/GradientSpaces/HouseTour"
+                   title="HouseTour repository"
+                   class="external-link button is-normal is-rounded is-primary">
+                  <span class="icon">
+                  <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
                 <a title="To be Published..."
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                  <i class="fas fa-database"></i>
                   </span>
-                  <span>Code</span>
-                  </a>
+                  <span>Dataset</span>
+                </a>
               </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -179,18 +189,45 @@
     </div>
 </section>
 
+<section>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">HouseTour Dataset</h2>
+          <div class="hero-body">
+            <img id="dataset-gif" width="100%" src="./static/videos/final_grid_900.gif" alt="HouseTour dataset preview GIF">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+                The HouseTour Dataset contains over 1,600 real-estate tour videos with aligned camera poses, 3D reconstructions, and professionally written property descriptions, enabling research in multi-modal scene understanding.
+                The data is procured from professional real-estate agencies and we acquired rights for sharing and using. Our dataset comprises:
+            </p>
+            <ul>
+              <li><strong>1,639 videos of real estate properties</strong> (apartments, condos, multi-storey houses)</li>
+              <li><strong>1,298 transcribed videos</strong> with real-estate oriented textual descriptions</li>
+              <li><strong>878 reconstructed 3D scenes</strong> (dense point clouds + camera trajectories)</li>
+              <li><strong>Professionally captured smooth camera trajectories</strong> emulating human navigation</li>
+              <li><strong>Real-estate style descriptions</strong> emphasizing layout, architectural features, materials, and ambiance</li>
+              <li><strong>Privacy-filtered:</strong> personally identifiable or sensitive content removed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
 <section class="section pt-0">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Qualitative Evaluation</h2>
           <div class="content has-text-justified">
-            <p>
-              Here we present a qualitative example of our summary generation, illustrating how the produced text corresponds to specific spatial elements and sampled images from the environment.
-            </p>
             <div class="hero-body">
               <img id="evaluation" width="100%" src="./static/images/summary_qualitative_1.png" alt="Scene-Level Summary Generation">
             </div>
+            <p>
+              Here we present a qualitative example of our summary generation, illustrating how the produced text corresponds to specific spatial elements and sampled images from the environment.
+            </p>
           </div>
         </div>
       </div>
